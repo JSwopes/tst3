@@ -1,0 +1,37 @@
+# The .gitignore file is used to specify files and directories that Git should ignore when tracking changes in your project's repository. It serves the following purposes:
+
+#     Exclude Unnecessary Files: It prevents certain files and directories from being included in the version control system (Git repository). This is useful for excluding files that are generated during the build process, log files, and other temporary or irrelevant files.
+
+#     Privacy and Security: It helps protect sensitive or confidential information from being accidentally committed to the repository. For example, API keys, credentials, and configuration files containing sensitive data can be kept out of version control.
+
+#     Reducing Repository Size: By excluding build artifacts, dependencies, and other generated files, it reduces the size of the repository, making cloning and working with the repository faster and more efficient.
+
+#     Maintaining Clean History: It helps maintain a clean and meaningful Git history. Ignoring build files and other generated content ensures that the commit history remains focused on the actual source code changes.
+
+#     Collaboration: It ensures that collaborators and contributors to the project do not inadvertently commit files that could cause conflicts or disrupt the development process.
+
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
